@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Contact form</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="header-txt">
+            <h1>Contact Us</h1>
+        </div>
+        <form id="from" novalidate>
+            <!-- Name Field -->
+            <div class="form-group">
+                <div class="firstname-group">
+                    <label for="firstname">
+                        First Name <i class="fa-solid fa-asterisk icon" focusable="false"></i>
+                    </label>
+                    <input type="text" id="firstname" name="firstname" autocomplete="firstname" aria-invalid="true" aria-describedby="firstname-error" />
+                    <span id="firstname-error" class="error-message"></span>
+                </div>
+                <div class="lastname-group">
+                    <label for="lastname">
+                        Last Name <i class="fa-solid fa-asterisk icon" focusable="false"></i>
+                    </label>
+                    <input type="text" id="lastname" name="lastname" autocomplete="lastname" aria-invalid="true" aria-describedby="lastname-error" />
+                    <span id="lastname-error" class="error-message"></span>
+                </div>
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">
+                    Email Address <i class="fa-solid fa-asterisk icon" focusable="false"></i>
+                </label>
+                <input type="email" id="email" name="email" autocomplete="email" aria-invalid="true" aria-describedby="email-error" />
+                <span id="email-error" class="error-message"></span>
+            </div>
+
+            <!-- Query Type field -->
+            <div class="form-group">
+               <p>Query Type <i class="fa-solid fa-asterisk icon" focusable="false"></i></p>
+               <div class="general-inquiry">
+                   <input type="radio" id="general" name="radio" value="general" aria-invalid="true" aria-describedby="radio-error" />
+                   <label for="general">General Enquiry</label>    
+               </div>
+               <div class="support-request">
+                   <input type="radio" name="radio" id="support" value="support" aria-invalid="true" aria-describedby="radio-error" />
+                   <label for="support">Support Request</label>
+               </div>
+               <span id="radio-error" class="error-message"></span>
+            </div>
+
+            <!-- Message Field -->
+            <div class="form-group">
+                <label for="message">
+                    Message <i class="fa-solid fa-asterisk icon" focusable="false"></i>
+                </label>
+                <textarea name="message" id="message" aria-invalid="true" aria-describedby="message-error"></textarea>
+                <span id="message-error" class="error-message"></span>
+            </div>
+
+            <!-- Consent Box -->
+             <div class="form-group">
+                <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" aria-invalid="true" aria-describedby="checkbox-error">
+                <label for="checkbox">
+                    I consent to being contacted by the team <i class="fa-solid fa-asterisk icon" focusable="false"></i>
+                </label>
+                <span id="checkbox-error" class="error-message"></span>
+             </div>
+
+             <!-- Submit Button -->
+              <button type="submit" class="submit-btn" aria-label="submit-btn">Submit</button>
+        </form>
+
+        <!-- Submit Button -->
+         <div class="success-state">
+            <h2><i class="fa-regular fa-circle-check"></i>Message Sent!</h2>
+            <p>Thanks for completing the form. We will be in touch soon!</p>
+        </div> 
+    </div>
+</body>
+</html>
