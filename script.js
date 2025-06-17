@@ -83,5 +83,16 @@ form.addEventListener("submit", (e) => {
     if(!checkBox) {
         consentError.textContent = "To submit this form, please consent to being contacted"
         hasError = true;
+    };
+
+    // Success Message
+    const successMsg = document.querySelector(".success-state");
+
+    if(!hasError) {
+        successMsg.style.display="block";
+        form.reset()
+        setTimeout(() => {
+            successMsg.style.display = "none"
+        }, 3000);
     }
 })
