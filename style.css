@@ -1,0 +1,50 @@
+:root{
+    --green-200: hsl(148, 38%, 91%);
+    --green-600: hsl(169, 82%, 27%);
+    --red: hsl(0, 66%, 54%);
+    --white: hsl(0, 0%, 100%);
+    --grey-500: hsl(186, 15%, 59%);
+    --grey-900: hsl(187, 24%, 22%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    background-color: var(--green-200);
+    font-size: 1rem;
+    font-family: "Karla", sans-serif;
+    height: 100%;
+    margin: 2rem 1rem;
+    color: var(--grey-900);
+}
+
+.container{
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+input:not(input[type="checkbox"], input[type="radio"]), textarea{
+    display: block;
+    width: 100%;
+    border: 1px solid var(--grey-500);
+    border-radius: 0.44rem;
+}
+
+input:not(input[type="checkbox"], input[type="radio"]){
+    height: 3rem;
+}
+
+.flex-label{
+    display: flex;
+    gap: 10px;
+}
+
+/* font-weight: 400, 700 */

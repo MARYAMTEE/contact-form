@@ -15,6 +15,11 @@
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -25,14 +30,14 @@
             <!-- Name Field -->
             <div class="form-group">
                 <div class="firstname-group">
-                    <label for="firstname">
+                    <label for="firstname" class="flex-label">
                         First Name <i class="fa-solid fa-asterisk icon" focusable="false"></i>
                     </label>
                     <input type="text" id="firstname" name="firstname" autocomplete="firstname" aria-invalid="true" aria-describedby="firstname-error" />
                     <span id="firstname-error" class="error-message"></span>
                 </div>
                 <div class="lastname-group">
-                    <label for="lastname">
+                    <label for="lastname" class="flex-label">
                         Last Name <i class="fa-solid fa-asterisk icon" focusable="false"></i>
                     </label>
                     <input type="text" id="lastname" name="lastname" autocomplete="lastname" aria-invalid="true" aria-describedby="lastname-error" />
@@ -42,7 +47,7 @@
 
             <!-- Email Field -->
             <div class="form-group">
-                <label for="email">
+                <label for="email" class="flex-label">
                     Email Address <i class="fa-solid fa-asterisk icon" focusable="false"></i>
                 </label>
                 <input type="email" id="email" name="email" autocomplete="email" aria-invalid="true" aria-describedby="email-error" />
@@ -51,7 +56,7 @@
 
             <!-- Query Type field -->
             <div class="form-group">
-               <p>Query Type <i class="fa-solid fa-asterisk icon" focusable="false"></i></p>
+               <p class="flex-label">Query Type <i class="fa-solid fa-asterisk icon" focusable="false"></i></p>
                <div class="general-inquiry">
                    <input type="radio" id="general" name="radio" value="general" aria-invalid="true" aria-describedby="radio-error" />
                    <label for="general">General Enquiry</label>    
@@ -65,10 +70,10 @@
 
             <!-- Message Field -->
             <div class="form-group">
-                <label for="message">
+                <label for="message" class="flex-label">
                     Message <i class="fa-solid fa-asterisk icon" focusable="false"></i>
                 </label>
-                <textarea name="message" id="message" aria-invalid="true" aria-describedby="message-error"></textarea>
+                <textarea name="message" id="message" rows="4" aria-invalid="true" aria-describedby="message-error"></textarea>
                 <span id="message-error" class="error-message"></span>
             </div>
 
@@ -88,8 +93,8 @@
         <!-- Submit Button -->
          <div class="success-state">
             <div class="success-header">
-                <i class="fa-regular fa-circle-check checked"></i>
-                <h2>Message Sent!</h2>
+                <i class="fa-regular fa-circle-check checked" aria-label="success title"></i>
+                <h2 class="success-title">Message Sent!</h2>
             </div>
             <p>Thanks for completing the form. We will be in touch soon!</p>
         </div> 
