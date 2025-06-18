@@ -96,3 +96,17 @@ form.addEventListener("submit", (e) => {
         }, 3000);
     }
 })
+
+
+// Add focus to radio button container
+const radioContainers = document.querySelectorAll(".radio-option");
+
+radioContainers.forEach(container => {
+    const radio = container.querySelector("input[type='radio']");
+
+    radio.addEventListener("change", ()=> {
+        radioContainers.forEach(c => c.classList.remove("selected"));
+
+        container.classList.add("selected");
+    })
+})
