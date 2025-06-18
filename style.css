@@ -134,7 +134,7 @@ textarea{
 }
 
 /* Style the Query input box */
-.general-inquiry, .support-request{
+.radio-option{
     border: 1px solid var(--grey-500);
     width: 100%;
     height: 3rem;

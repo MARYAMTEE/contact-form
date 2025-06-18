@@ -1,4 +1,5 @@
 const form = document.querySelector("#form");
+const radioContainers = document.querySelectorAll(".radio-option");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault(); 
@@ -91,16 +92,18 @@ form.addEventListener("submit", (e) => {
     if(!hasError) {
         successMsg.style.display="block";
         form.reset()
+
+        // Remove .selected class from all radio containers
+        radioContainers.forEach(container => {
+        container.classList.remove("selected");
+        });
         setTimeout(() => {
             successMsg.style.display = "none"
         }, 3000);
     }
-})
-
+});
 
 // Add focus to radio button container
-const radioContainers = document.querySelectorAll(".radio-option");
-
 radioContainers.forEach(container => {
     const radio = container.querySelector("input[type='radio']");
 
@@ -108,5 +111,5 @@ radioContainers.forEach(container => {
         radioContainers.forEach(c => c.classList.remove("selected"));
 
         container.classList.add("selected");
-    })
-})
+    });
+});
