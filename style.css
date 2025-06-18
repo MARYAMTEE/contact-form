@@ -18,6 +18,7 @@ body{
     place-items: center;
     background-color: var(--green-200);
     font-size: 1rem;
+    font-weight: 500;
     font-family: "Karla", sans-serif;
     height: 100%;
     margin: 2rem 1rem;
@@ -31,6 +32,12 @@ body{
     padding: 1.5rem;
 }
 
+/* Header text */
+.header-txt {
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+
 /* input boxes */
 input:not(input[type="checkbox"], input[type="radio"]), textarea{
     display: block;
@@ -38,10 +45,28 @@ input:not(input[type="checkbox"], input[type="radio"]), textarea{
     border: 1px solid var(--grey-500);
     border-radius: 0.44rem;
     padding: 0 1.5rem;
+    font-size: 1rem;
+}
+
+textarea{
+    padding: 1.5rem;
 }
 
 input:not(input[type="checkbox"], input[type="radio"]){
     height: 3rem;
+}
+
+input[type="checkbox"], input[type="radio"]{
+    width: 1.3rem;
+    height: 1.3rem;
+    accent-color: var(--green-600);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 1000px #fff inset !important;
 }
 
 /* Implementing space between the label and asterisks */
@@ -82,9 +107,13 @@ textarea{
 }
 
 .consent{
-    /* display: flex;
-    gap: 1rem; */
     padding: 1.5rem 0;
+}
+
+.consent-box{
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
 }
 
 .consent .icon{
@@ -115,6 +144,7 @@ textarea{
     font-weight: 700;
     font-size: 16px;
     border-radius: 0.44rem;
+    margin-top: 0.8rem;
 }
 
 /* Error color */
