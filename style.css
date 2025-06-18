@@ -31,6 +31,7 @@ body{
     padding: 1.5rem;
 }
 
+/* input boxes */
 input:not(input[type="checkbox"], input[type="radio"]), textarea{
     display: block;
     width: 100%;
@@ -42,9 +43,42 @@ input:not(input[type="checkbox"], input[type="radio"]){
     height: 3rem;
 }
 
+/* Implementing space between the label and asterisks */
 .flex-label{
     display: flex;
-    gap: 10px;
+    align-items: center;
+    gap: 0.5rem;
 }
 
+/* Asterisks */
+.icon{
+    color: var(--green-600);
+    font-size: 0.4rem;
+}
+
+.form-group{
+    display: grid;
+    gap: 0.8rem;
+}
+
+.form-group > .name-group{
+    display: grid;
+    gap: 0.8rem;
+}
+
+/* Textare size control */
+textarea{
+    resize: none;
+}
+
+/* Success state */
+.success-state{
+    display: none;
+}
+
+.consent{
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem 0;
+}
 /* font-weight: 400, 700 */

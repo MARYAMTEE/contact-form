@@ -29,14 +29,14 @@
         <form id="form" novalidate>
             <!-- Name Field -->
             <div class="form-group">
-                <div class="firstname-group">
+                <div class="name-group">
                     <label for="firstname" class="flex-label">
                         First Name <i class="fa-solid fa-asterisk icon" focusable="false"></i>
                     </label>
                     <input type="text" id="firstname" name="firstname" autocomplete="firstname" aria-invalid="true" aria-describedby="firstname-error" />
                     <span id="firstname-error" class="error-message"></span>
                 </div>
-                <div class="lastname-group">
+                <div class="name-group">
                     <label for="lastname" class="flex-label">
                         Last Name <i class="fa-solid fa-asterisk icon" focusable="false"></i>
                     </label>
@@ -73,12 +73,12 @@
                 <label for="message" class="flex-label">
                     Message <i class="fa-solid fa-asterisk icon" focusable="false"></i>
                 </label>
-                <textarea name="message" id="message" rows="4" aria-invalid="true" aria-describedby="message-error"></textarea>
+                <textarea name="message" id="message" rows="15" aria-invalid="true" aria-describedby="message-error"></textarea>
                 <span id="message-error" class="error-message"></span>
             </div>
 
             <!-- Consent Box -->
-             <div class="form-group">
+             <div class="consent">
                 <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" aria-invalid="true" aria-describedby="checkbox-error">
                 <label for="checkbox">
                     I consent to being contacted by the team <i class="fa-solid fa-asterisk icon" focusable="false"></i>
