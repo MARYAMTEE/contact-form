@@ -150,8 +150,13 @@ textarea{
     border-color: var(--green-600);
 }
 
-.general-inquiry:hover, .support-request:hover{
+.radio-option:hover{
     border-color: var(--green-600);
+}
+
+.radio-group{
+    display: flex;
+    gap: 1rem;
 }
 
 /* Submit button */
@@ -181,4 +186,32 @@ textarea{
 .error-border{
     border: 1px solid var(--red);
 }
-/* font-weight: 400, 700 */
+
+@media (min-width: 64rem){
+    body{
+        margin: 6.25rem 0;
+    }
+
+    .container{
+        width: 50rem;
+        padding: 2.5rem;
+    }
+
+    .name-field{
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .name-group{
+        flex: 1;
+    }
+
+    .radio-group {
+        flex-direction: row;
+    }
+
+    textarea{
+        height: 7rem;
+    }
+}

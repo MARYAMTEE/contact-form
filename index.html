@@ -28,7 +28,7 @@
         </div>
         <form id="form" novalidate>
             <!-- Name Field -->
-            <div class="form-group">
+            <div class="form-group name-field">
                 <div class="name-group">
                     <label for="firstname" class="flex-label">
                         First Name <i class="fa-solid fa-asterisk icon" focusable="false"></i>
@@ -57,13 +57,16 @@
             <!-- Query Type field -->
             <div class="form-group">
                <p class="flex-label">Query Type <i class="fa-solid fa-asterisk icon" focusable="false"></i></p>
-               <div class="radio-option">
-                   <input type="radio" id="general" name="radio" value="general" aria-invalid="true" aria-describedby="radio-error" />
-                   <label for="general">General Enquiry</label>    
-               </div>
-               <div class="radio-option">
-                   <input type="radio" name="radio" id="support" value="support" aria-invalid="true" aria-describedby="radio-error" />
-                   <label for="support">Support Request</label>
+               
+               <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="general" name="radio" value="general" aria-invalid="true" aria-describedby="radio-error" />
+                        <label for="general">General Enquiry</label>    
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="radio" id="support" value="support" aria-invalid="true" aria-describedby="radio-error" />
+                        <label for="support">Support Request</label>
+                    </div>
                </div>
                <span id="radio-error" class="error-message"></span>
             </div>
