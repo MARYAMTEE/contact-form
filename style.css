@@ -35,7 +35,7 @@ body{
 /* Header text */
 .header-txt {
     font-weight: 700;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
 }
 
 /* input boxes */
@@ -156,6 +156,7 @@ textarea{
 
 .radio-group{
     display: flex;
+    flex-direction: column;
     gap: 1rem;
 }
 
@@ -183,8 +184,9 @@ textarea{
     color: var(--red);
 }
 
-.error-border{
-    border: 1px solid var(--red);
+input.error-border,
+textarea.error-border{
+    border: 1px solid var(--red) !important;
 }
 
 @media (min-width: 64rem){
