@@ -22,86 +22,88 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="header-txt">
-            <h1>Contact Us</h1>
-        </div>
-        <form id="form" novalidate>
-            <!-- Name Field -->
-            <div class="form-group name-field">
-                <div class="name-group">
-                    <label for="firstname" class="flex-label">
-                        First Name <i class="fa-solid fa-asterisk icon" focusable="false"></i>
-                    </label>
-                    <input type="text" id="firstname" name="firstname" autocomplete="given-name" aria-invalid="true" aria-describedby="firstname-error" />
-                    <span id="firstname-error" class="error-message"></span>
-                </div>
-                <div class="name-group">
-                    <label for="lastname" class="flex-label">
-                        Last Name <i class="fa-solid fa-asterisk icon" focusable="false"></i>
-                    </label>
-                    <input type="text" id="lastname" name="lastname" autocomplete="family-name" aria-invalid="true" aria-describedby="lastname-error" />
-                    <span id="lastname-error" class="error-message"></span>
-                </div>
+    <main>
+        <div class="container">
+            <div class="header-txt">
+                <h1>Contact Us</h1>
             </div>
-
-            <!-- Email Field -->
-            <div class="form-group">
-                <label for="email" class="flex-label">
-                    Email Address <i class="fa-solid fa-asterisk icon" focusable="false"></i>
-                </label>
-                <input type="email" id="email" name="email" autocomplete="email" aria-invalid="true" aria-describedby="email-error" />
-                <span id="email-error" class="error-message"></span>
-            </div>
-
-            <!-- Query Type field -->
-            <div class="form-group">
-               <p class="flex-label">Query Type <i class="fa-solid fa-asterisk icon" focusable="false"></i></p>
-               
-               <div class="radio-group">
-                    <div class="radio-option">
-                        <input type="radio" id="general" name="radio" value="general" aria-invalid="true" aria-describedby="radio-error" />
-                        <label for="general">General Enquiry</label>    
+            <form id="form" novalidate>
+                <!-- Name Field -->
+                <div class="form-group name-field">
+                    <div class="name-group">
+                        <label for="firstname" class="flex-label">
+                            First Name <i class="fa-solid fa-asterisk icon" focusable="false"></i>
+                        </label>
+                        <input type="text" id="firstname" name="firstname" autocomplete="given-name" aria-invalid="true" aria-describedby="firstname-error" />
+                        <span id="firstname-error" class="error-message"></span>
                     </div>
-                    <div class="radio-option">
-                        <input type="radio" name="radio" id="support" value="support" aria-invalid="true" aria-describedby="radio-error" />
-                        <label for="support">Support Request</label>
+                    <div class="name-group">
+                        <label for="lastname" class="flex-label">
+                            Last Name <i class="fa-solid fa-asterisk icon" focusable="false"></i>
+                        </label>
+                        <input type="text" id="lastname" name="lastname" autocomplete="family-name" aria-invalid="true" aria-describedby="lastname-error" />
+                        <span id="lastname-error" class="error-message"></span>
                     </div>
-               </div>
-               <span id="radio-error" class="error-message"></span>
-            </div>
-
-            <!-- Message Field -->
-            <div class="form-group">
-                <label for="message" class="flex-label">
-                    Message <i class="fa-solid fa-asterisk icon" focusable="false"></i>
-                </label>
-                <textarea name="message" id="message" rows="11" aria-invalid="true" aria-describedby="message-error"></textarea>
-                <span id="message-error" class="error-message"></span>
-            </div>
-
-            <!-- Consent Box -->
-             <div class="consent">
-                <div class="consent-box">
-                    <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" aria-invalid="true" aria-describedby="checkbox-error">
-                    <label for="checkbox">
-                        I consent to being contacted by the team <i class="fa-solid fa-asterisk icon" focusable="false"></i>
-                    </label>
                 </div>
-                <span id="checkbox-error" class="error-message"></span>
-             </div>
 
-             <!-- Submit Button -->
-              <button type="submit" class="submit-btn" aria-label="submit-btn">Submit</button>
-        </form> 
-    </div>
-    <!-- Success State -->
-         <div class="success-state">
-            <div class="success-header">
-                <img src="./assets/images/icon-success-check.svg" alt="" aria-label="success title">
-                <h2 class="success-title">Message Sent!</h2>
-            </div>
-            <p>Thanks for completing the form. We will be in touch soon!</p>
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="email" class="flex-label">
+                        Email Address <i class="fa-solid fa-asterisk icon" focusable="false"></i>
+                    </label>
+                    <input type="email" id="email" name="email" autocomplete="email" aria-invalid="true" aria-describedby="email-error" />
+                    <span id="email-error" class="error-message"></span>
+                </div>
+
+                <!-- Query Type field -->
+                <div class="form-group">
+                <p class="flex-label">Query Type <i class="fa-solid fa-asterisk icon" focusable="false"></i></p>
+                
+                <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="general" name="radio" value="general" aria-invalid="true" aria-describedby="radio-error" />
+                            <label for="general">General Enquiry</label>    
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" name="radio" id="support" value="support" aria-invalid="true" aria-describedby="radio-error" />
+                            <label for="support">Support Request</label>
+                        </div>
+                </div>
+                <span id="radio-error" class="error-message"></span>
+                </div>
+
+                <!-- Message Field -->
+                <div class="form-group">
+                    <label for="message" class="flex-label">
+                        Message <i class="fa-solid fa-asterisk icon" focusable="false"></i>
+                    </label>
+                    <textarea name="message" id="message" rows="11" aria-invalid="true" aria-describedby="message-error"></textarea>
+                    <span id="message-error" class="error-message"></span>
+                </div>
+
+                <!-- Consent Box -->
+                <div class="consent">
+                    <div class="consent-box">
+                        <input type="checkbox" id="checkbox" name="checkbox" value="checkbox" aria-invalid="true" aria-describedby="checkbox-error">
+                        <label for="checkbox">
+                            I consent to being contacted by the team <i class="fa-solid fa-asterisk icon" focusable="false"></i>
+                        </label>
+                    </div>
+                    <span id="checkbox-error" class="error-message"></span>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn" aria-label="submit-btn">Submit</button>
+            </form> 
         </div>
+        <!-- Success State -->
+            <div class="success-state">
+                <div class="success-header">
+                    <img src="./assets/images/icon-success-check.svg" alt="" aria-label="success title">
+                    <h2 class="success-title">Message Sent!</h2>
+                </div>
+                <p>Thanks for completing the form. We will be in touch soon!</p>
+            </div>
+        </main>
 </body>
 </html>
