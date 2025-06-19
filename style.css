@@ -119,13 +119,14 @@ textarea{
 .success-state{
     display: none;
     position: absolute;
-    top: 1rem;
+    top: 0;
     background-color: var(--grey-900);
     color: white;
     font-weight: 400;
-    padding: 1.5rem;
-    line-height: 1.9;
+    padding: 0.5rem 1rem;
+    line-height: 1.6;
     border-radius: 0.8rem;
+    margin: 0 1rem;
 }
 
 .success-header{
@@ -240,5 +241,11 @@ textarea.error-border{
 
     textarea{
         height: 6rem;
+    }
+
+    .success-state{
+        top: 1rem;
+        padding: 1.5rem;
+        line-height: 1.9;
     }
 }
