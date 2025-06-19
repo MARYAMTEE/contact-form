@@ -49,10 +49,6 @@ input:not(input[type="checkbox"], input[type="radio"]), textarea{
     font-size: 1rem;
 }
 
-textarea{
-    padding: 1.5rem;
-}
-
 input:not(input[type="checkbox"], input[type="radio"]){
     height: 3rem;
 }
@@ -77,10 +73,10 @@ input[type="checkbox"], input[type="radio"]{
 }
 
 input:-webkit-autofill,
-input:-webkit-autofill:focus,
 input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  box-shadow: 0 0 0 1000px #fff inset !important;
+  box-shadow: 0 0 0 1000px white inset;
 }
 
 /* Implementing space between the label and asterisks */
@@ -113,6 +109,10 @@ input:-webkit-autofill:active {
 /* Textare size control */
 textarea{
     resize: none;
+}
+
+textarea{
+    padding: 1.5rem;
 }
 
 /* Success state */
@@ -196,7 +196,7 @@ textarea{
     color: var(--white);
     font-family: "Karla", sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 0.44rem;
     margin-top: 0.8rem;
 }
