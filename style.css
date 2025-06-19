@@ -27,6 +27,7 @@ body{
 
 .container{
     width: 100%;
+    position: relative;
     background-color: var(--white);
     border-radius: 1rem;
     padding: 1.5rem;
@@ -117,6 +118,30 @@ textarea{
 /* Success state */
 .success-state{
     display: none;
+    position: absolute;
+    top: 1rem;
+    background-color: var(--grey-900);
+    color: white;
+    font-weight: 400;
+    padding: 1.5rem;
+    line-height: 1.9;
+    border-radius: 0.8rem;
+}
+
+.success-header{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.success-header h2{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.success-header i{
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 
 .consent{
@@ -191,11 +216,11 @@ textarea.error-border{
 
 @media (min-width: 64rem){
     body{
-        margin: 6.25rem 0;
+        margin: 8rem 0;
     }
 
     .container{
-        width: 50rem;
+        width: 45rem;
         padding: 2.5rem;
     }
 
